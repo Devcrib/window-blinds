@@ -1,0 +1,74 @@
+@-webkit-keyframes jumpin-jumpin {
+    to { top: 10%; transform: scale(0.9) }
+}
+@-o-keyframes jumpin-jumpin {
+    to { top: 10%; transform: scale(0.9) }
+}
+@-moz-keyframes jumpin-jumpin {
+    to { top: 10%; transform: scale(0.9) }
+}
+@keyframes jumpin-jumpin {
+    to { top: 10%; transform: scale(0.9) }
+}
+
+@-webkit-keyframes blinds {
+    0% {
+        top: 10%
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+@-o-keyframes blinds {
+    0% {
+        top: 10%
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+@-moz-keyframes blinds {
+    0% {
+        top: 10%
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+@keyframes blinds {
+    0% {
+        top: 10%
+    }
+    100% {
+        transform: rotateY(180deg);
+    }
+}
+
+@-webkit-keyframes colorful {
+    0%,100% { color: #fa0 }
+    20% { color: bisque }
+    40% { color: steelblue }
+    60% { color: teal }
+    80% { color: indianred}
+}
+@-o-keyframes colorful {
+    0%,100% { color: #fa0 }
+    20% { color: bisque }
+    40% { color: steelblue }
+    60% { color: teal }
+    80% { color: indianred}
+}
+@-moz-keyframes colorful {
+    0%,100% { color: #fa0 }
+    20% { color: bisque }
+    40% { color: steelblue }
+    60% { color: teal }
+    80% { color: indianred}
+}
+@keyframes colorful {
+    0%,100% { color: #fa0 }
+    20% { color: bisque }
+    40% { color: steelblue }
+    60% { color: teal }
+    80% { color: indianred}
+}

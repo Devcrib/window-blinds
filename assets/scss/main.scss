@@ -1,0 +1,64 @@
+/**
+ * @author
+ * Devcrib, Planet NEST
+ * http://planetnest.org/devcrib
+ * Thursday, 23rd March, 2017
+ */
+
+@import "partials/anime";
+
+$color: lavender #fefefe;
+$depth: 30%;
+$factor: $depth / 30;
+$w: (100% / 30);
+
+html, body {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+%box {
+    width: $w;
+    float: left;
+    -webkit-animation: blinds 1s ease-out alternate infinite;
+    animation: blinds 1s ease-out alternate infinite;
+    position: absolute;
+    top: 0;
+}
+
+@for $i from 1 through 30 {
+    .box-#{$i} {
+        @extend %box;
+        height: 90%;
+        //background: nth($colors, ($i % 4) + 1)
+        background: darken( nth($color, ($i % 2) + 1) , $depth);
+        $depth: $depth - $factor;
+        animation-delay: $i * 50ms;
+        left: ($i * $w) - $w;
+    }
+}
+
+.signature {
+    font-size: 500%;
+    -webkit-animation: colorful 3s ease-out infinite;
+    animation: colorful 3s ease-out infinite;
+    color: #fa0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: translate(-50%, -50%) perspective(1px);
+    -ms-transform: translate(-50%, -50%) perspective(1px);
+    -o-transform: translate(-50%, -50%) perspective(1px);
+    transform: translate(-50%, -50%) perspective(1px);
+
+    span {
+        font-size: 25%;
+    }
+}
